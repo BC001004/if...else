@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+<body>
+    <script>
+        function zlpwez() {
+            var x=document.getElementById("bjk").value
+            if (x >= 0 && x <= 100 && x != "") {
+                if (x >= 90) {
+                    alert("优秀")
+                }
+                else {
+                    if (x >= 80) {
+                        alert("中")
+                    }
+
+                    else {
+                        if (x >= 70) {
+                            alert("中")
+                        }
+
+                        else {
+                            if (x >= 60) {
+                                alert("及格")
+                            }
+
+                            else {
+                                if (x >= 45) {
+                                    alert("补考")
+                                }
+
+                                else {
+                                    if (x <= 45) {
+                                        alert("重修")
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            else{
+                alert("请输入0~100间的有效数字")
+            }
+        } 
+    </script>
+    
+    <h1>TEST</h1>
+    <p class="text-wenzi">在下列输入框中输入0~100有效成绩</p>
+    <div class="mzdsy">
+      <input id="bjk" type="text">
+      <button id="anniu" onclick="zlpwez()">确定</button>
+    </div>
+</body>
+
+</html>
